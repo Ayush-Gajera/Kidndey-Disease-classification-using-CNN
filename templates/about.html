@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Kidney Disease Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For icons -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: E3F2FD;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: #1E3A8A;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav-links a:hover {
+            color: #a5b4fc;
+        }
+        .about-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background: linear-gradient(to right, #E3F2FD, #FCE4EC);            ;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .about-container h1 {
+            margin-bottom: 30px;
+            font-size: 32px;
+            color: #333;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .images img {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .accuracy {
+            font-size: 22px;
+            margin-bottom: 30px;
+            color: #4A148C;
+        }
+        .developer {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .social-icons a {
+            color: #62a015;
+            margin: 0 15px;
+            font-size: 28px;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #16a34a;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Kidney Disease Predictor</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-container">
+        <h1>About the Project</h1>
+
+        <div class="images">
+            <img src="/static/model/accuracy_vs_epoch.png" alt="Training and Validation Loss">
+            <img src="/static/model/loss_vs_epoch.png" alt="Training and Validation Accuracy">
+        </div>
+
+        <div class="accuracy">
+            Model Accuracy: <strong>98.24%</strong>
+        </div>
+
+        <div class="developer">
+            Developed by <strong>Ayush Gajera</strong>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://github.com/Ayush-Gajera" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/ayush-gajera" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://leetcode.com/gajeraayush5" target="_blank">
+                <i class="fas fa-pen-nib"></i> <!-- LeetCode uses code symbol -->
+            </a>
+        </div>      
+    </div>
+
+</body>
+</html>
